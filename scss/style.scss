@@ -1,0 +1,164 @@
+@font-face {
+    font-family: "DinRegular";
+    src: url("../fonts/dean-regular.OTF") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DinThin";
+    src: url("../fonts/dean-thinn.OTF") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DinMedium";
+    src: url("../fonts/dean-medium.OTF") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DinBold";
+    src: url("../fonts/dean-bold.OTF") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    text-align: right;
+    font-family: "DinRegular";
+}
+
+.home {
+    .btn-dark-blue {
+        padding: 5px 25px 8px;
+        border-radius: 20pc;
+        -webkit-border-radius: 20pc;
+        -moz-border-radius: 20pc;
+        -ms-border-radius: 20pc;
+        -o-border-radius: 20pc;
+        background-color: #19243D;
+        color: #fff;
+        outline: none;
+        border: 0;
+        font-size: 12px;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    &__stats {
+        &--title {
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .card {
+            border-radius: 1pc;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 4px;
+            border: 0;
+            .card-header {
+                background: transparent;
+                border-radius: 20pc;
+                text-align: center;
+                border: 1px solid #ddd;
+                padding: 6px;
+                margin-top: 7px;
+            }
+        }
+        &__tabs {
+            padding-right: 0;
+            border-bottom: 0;
+            .nav-link {
+                border: 0;
+                padding: 0.3rem 0rem;
+                &.active {
+                    color: #495057;
+                    border-color: #f08383;
+                    border-bottom: 1px solid #f08383;
+                }
+            }
+            &--tab {
+                list-style: none;
+                a {
+                    color: #111;
+                }
+            }
+        }
+        &__tabContent {
+            &--tab-pane {
+                .row:first-child {
+                    border-bottom: 1px solid #eee;
+                }
+                .row {
+                    .col-6:first-child {
+                        border-left: 1px solid #eee;
+                    }
+                }
+            }
+        }
+    }
+    &__widgets {
+        &__mainCard {
+            border-radius: 1pc;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 4px;
+            border: 0;
+            &__requests,
+            &__reviews,
+            &__stock {
+                border: 0;
+                &:not(:first-child) {
+                    margin-top: 10px;
+                }
+                &__card-header {
+                    background: transparent;
+                    border-radius: 20pc;
+                    text-align: center;
+                    border: 1px solid #ddd;
+                    padding: 6px;
+                    cursor: pointer;
+                    &:not(.collapsed) {
+                        .rotate-icon {
+                            transform: rotate(180deg);
+                            -webkit-transform: rotate(180deg);
+                            -moz-transform: rotate(180deg);
+                            -ms-transform: rotate(180deg);
+                            -o-transform: rotate(180deg);
+                            transition: .5s all;
+                            -webkit-transition: .5s all;
+                            -moz-transition: .5s all;
+                            -ms-transition: .5s all;
+                            -o-transition: .5s all;
+                        }
+                    }
+                }
+            }
+            .circle-green {
+                width: 10px;
+                height: 10px;
+                background-color: #8DC23E;
+                border-radius: 50%;
+                position: relative;
+                top: 2px;
+                display: inline-block;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+            }
+            .circle-blue {
+                width: 10px;
+                height: 10px;
+                background-color: #47A6FD;
+                border-radius: 50%;
+                position: relative;
+                top: 2px;
+                display: inline-block;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+            }
+        }
+    }
+}
