@@ -29,6 +29,7 @@
 body {
     text-align: right;
     font-family: "DinRegular";
+    background-color: #f8f8f8;
 }
 
 .home {
@@ -39,7 +40,7 @@ body {
         -moz-border-radius: 20pc;
         -ms-border-radius: 20pc;
         -o-border-radius: 20pc;
-        background-color: #19243D;
+        background-color: #19243d;
         color: #fff;
         outline: none;
         border: 0;
@@ -124,11 +125,11 @@ body {
                             -moz-transform: rotate(180deg);
                             -ms-transform: rotate(180deg);
                             -o-transform: rotate(180deg);
-                            transition: .5s all;
-                            -webkit-transition: .5s all;
-                            -moz-transition: .5s all;
-                            -ms-transition: .5s all;
-                            -o-transition: .5s all;
+                            transition: 0.5s all;
+                            -webkit-transition: 0.5s all;
+                            -moz-transition: 0.5s all;
+                            -ms-transition: 0.5s all;
+                            -o-transition: 0.5s all;
                         }
                     }
                 }
@@ -136,7 +137,7 @@ body {
             .circle-green {
                 width: 10px;
                 height: 10px;
-                background-color: #8DC23E;
+                background-color: #8dc23e;
                 border-radius: 50%;
                 position: relative;
                 top: 2px;
@@ -146,10 +147,40 @@ body {
                 -ms-border-radius: 50%;
                 -o-border-radius: 50%;
             }
+            .checked {
+                color: orange;
+            }
+            .button-outline-blue {
+                border: 1.5px solid #80d2ff;
+                color: #80d2ff;
+                background-color: #0000;
+                outline: none;
+                padding: 6px 20px;
+                font-weight: bold;
+                font-size: 13px;
+            }
+            .button-outline-danger {
+                border: 1.5px solid #ff7a7e;
+                color: #111;
+                background-color: #0000;
+                outline: none;
+                padding: 6px 20px;
+                font-weight: bold;
+                font-size: 13px;
+            }
+            .button-outline-empty {
+                color: #111;
+                border: 0;
+                border-bottom: 1px solid #111;
+                background-color: #0000;
+                outline: none;
+                font-weight: bold;
+                font-size: 13px;
+            }
             .circle-blue {
                 width: 10px;
                 height: 10px;
-                background-color: #47A6FD;
+                background-color: #47a6fd;
                 border-radius: 50%;
                 position: relative;
                 top: 2px;
@@ -158,6 +189,43 @@ body {
                 -moz-border-radius: 50%;
                 -ms-border-radius: 50%;
                 -o-border-radius: 50%;
+            }
+        }
+    }
+}
+
+.settings {
+    &__title {
+        font-size: 35px;
+        font-weight: bold;
+    }
+    &__cards {
+        &__link {
+            display: block;
+            color: inherit;
+            border-radius: 1pc;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 4px;
+            border: 0;
+            background-color: #fff;
+            &:hover {
+                text-decoration: none;
+                color: inherit;
+                transform: scale(1.05);
+                transition: 0.6s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+                -webkit-transition: 0.6s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+                -moz-transition: 0.6s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+                -ms-transition: 0.6s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+                -o-transition: 0.6s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+            }
+            &--img {
+                width: 100px;
+            }
+            &--title {
+                font-size: 17px;
+            }
+            &--desc {
+                font-size: 13px;
             }
         }
     }
