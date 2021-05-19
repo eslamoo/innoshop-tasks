@@ -9269,6 +9269,10 @@ button.bg-dark:hover {
     .m-md-0 {
         margin: 0!important
     }
+    /* .px-md-8 {
+        padding-right: 8rem !important;
+        padding-left: 8rem !important;
+    } */
     .mt-md-0,
     .my-md-0 {
         margin-top: 0!important
@@ -10552,8 +10556,8 @@ a.text-dark:hover {
 
 @media print {
     *,
-    ::after,
-    ::before {
+     ::after,
+     ::before {
         text-shadow: none!important;
         box-shadow: none!important
     }

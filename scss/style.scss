@@ -1,3 +1,4 @@
+// General Font ===================
 @font-face {
     font-family: "DinRegular";
     src: url("../fonts/dean-regular.OTF") format("opentype");
@@ -32,6 +33,35 @@ body {
     background-color: #f8f8f8;
 }
 
+.circle-green {
+    width: 10px;
+    height: 10px;
+    background-color: #8dc23e;
+    border-radius: 50%;
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.circle-blue {
+    width: 10px;
+    height: 10px;
+    background-color: #47a6fd;
+    border-radius: 50%;
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+// Home Page ===================
 .home {
     .btn-dark-blue {
         padding: 5px 25px 8px;
@@ -134,19 +164,6 @@ body {
                     }
                 }
             }
-            .circle-green {
-                width: 10px;
-                height: 10px;
-                background-color: #8dc23e;
-                border-radius: 50%;
-                position: relative;
-                top: 2px;
-                display: inline-block;
-                -webkit-border-radius: 50%;
-                -moz-border-radius: 50%;
-                -ms-border-radius: 50%;
-                -o-border-radius: 50%;
-            }
             .checked {
                 color: orange;
             }
@@ -177,23 +194,11 @@ body {
                 font-weight: bold;
                 font-size: 13px;
             }
-            .circle-blue {
-                width: 10px;
-                height: 10px;
-                background-color: #47a6fd;
-                border-radius: 50%;
-                position: relative;
-                top: 2px;
-                display: inline-block;
-                -webkit-border-radius: 50%;
-                -moz-border-radius: 50%;
-                -ms-border-radius: 50%;
-                -o-border-radius: 50%;
-            }
         }
     }
 }
 
+// Settings Page ===================
 .settings {
     &__title {
         font-size: 35px;
@@ -227,6 +232,172 @@ body {
             &--desc {
                 font-size: 13px;
             }
+        }
+    }
+}
+
+// Settings Page ===================
+.affiliate {
+    &__title {
+        font-size: 35px;
+        font-family: "DinMedium";
+    }
+    &__subtitle {
+        font-family: "DinThin";
+        font-size: 20px;
+        span {
+            color: #36AAFD;
+            font-family: "DinMedium";
+        }
+    }
+    &__link {
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 4px;
+        padding: 12px;
+        border-radius: 5pc;
+        -webkit-border-radius: 5pc;
+        -moz-border-radius: 5pc;
+        -ms-border-radius: 5pc;
+        -o-border-radius: 5pc;
+        &--container {
+            background-color: #fff;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 4px;
+            padding: 7px 15px;
+            border-radius: 5pc;
+            -webkit-border-radius: 5pc;
+            -moz-border-radius: 5pc;
+            -ms-border-radius: 5pc;
+            -o-border-radius: 5pc;
+            &--btn {
+                background-color: transparent;
+                border: 0;
+                border-left: 1px solid #ddd;
+            }
+        }
+    }
+    &__subscribe {
+        margin-top: 100px;
+        &--title {
+            font-size: 35px;
+        }
+        &--desc {
+            font-family: "DinThin";
+            font-size: 20px;
+            margin: 55px 0;
+        }
+        &--btn {
+            background-color: #E95150;
+            border-radius: 10pc;
+            -webkit-border-radius: 10pc;
+            -moz-border-radius: 10pc;
+            -ms-border-radius: 10pc;
+            -o-border-radius: 10pc;
+            color: #fff;
+            border-color: #E95150;
+            border-style: none;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    &__partner {
+        &--title {
+            font-size: 34px;
+            text-align: center;
+            margin: 50px 0 70px 0;
+            font-family: "DinMedium";
+        }
+        &--card {
+            text-align: center;
+            padding: 15px 25px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 4px;
+            background-color: #fff;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+            height: 100%;
+            &--desc {
+                text-align: justify;
+                font-size: 17px;
+                margin-top: 20px;
+            }
+        }
+        &--btn {
+            button {
+                background-color: #E95150;
+                border-radius: 10pc;
+                -webkit-border-radius: 10pc;
+                -moz-border-radius: 10pc;
+                -ms-border-radius: 10pc;
+                -o-border-radius: 10pc;
+                color: #fff;
+                border-color: #E95150;
+                border-style: none;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+    &__faq {
+        &--title {
+            font-size: 34px;
+            text-align: center;
+            margin: 50px 0 70px 0;
+            font-family: "DinMedium";
+        }
+        &__question {
+            &--header {
+                cursor: pointer;
+                .title {
+                    font-size: 22px;
+                    font-family: "DinMedium";
+                }
+                &:not(.collapsed) {
+                    .rotate-icon {
+                        transform: rotate(-90deg);
+                        -webkit-transform: rotate(-90deg);
+                        -moz-transform: rotate(-90deg);
+                        -ms-transform: rotate(-90deg);
+                        -o-transform: rotate(-90deg);
+                        transition: 0.5s all;
+                        color: #E95150;
+                        -webkit-transition: 0.5s all;
+                        -moz-transition: 0.5s all;
+                        -ms-transition: 0.5s all;
+                        -o-transition: 0.5s all;
+                    }
+                }
+            }
+            &__text {
+                p {
+                    text-align: justify;
+                }
+            }
+        }
+    }
+    &__table {
+        &__row {
+            padding: 10px 100px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 4px;
+            background-color: #fff;
+            border-radius: 1pc;
+            -webkit-border-radius: 1pc;
+            -moz-border-radius: 1pc;
+            -ms-border-radius: 1pc;
+            -o-border-radius: 1pc;
+            &__titles {
+                border-bottom: 1px solid #ddd;
+                h3 {
+                    font-size: 18px;
+                    font-family: "DinMedium"
+                }
+            }
+        }
+        span {
+            color: #6c757d;
         }
     }
 }
